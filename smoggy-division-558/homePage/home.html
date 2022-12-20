@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-child-1">
+                <span class="logo">
+                   <a href="./home.html"><img src="../image/Kukudoo ku.jpg" alt="" id="logo"></a> 
+                </span>
+                <div class="content">
+                    <a href="../menu/menu.html"><h3 class="menu">menu</h3></a>
+                    <a href="../DealSection/deal.html"><h3 class="deal">Deals </h3></a>
+                </div>
+            </div>
+            <div class="navbar-child-2">
+                <!-- image for users -->
+                <div class="sign_in id"  id="signIn">
+                    <i class="fas fa-user"></i>
+                    <span  id="signIn">Sign in</span>
+                </div>
+                <div class="cart-nav">
+                    <span id="price">₹0</span>
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/7FHdvAK9N6x9Ed6H6tsvzo/b14cb9909f2cff2d96c747d479a7ffa5/Cart_icon_animation_120-_icon.svg"
+                        alt="" class="prod-cart">
+                    <span id="Prod-cart">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <i class="fas fa-location"></i>
+            <span class="location-detail">Pick up at: KFC Mumbai - Viviana
+            </span>
+            <i class="fas fa-clock"></i>
+            <span class="location-detail">ASAP</span>
+            <button class="change-location">Change</button>
+        </div>
+    </header>
+    <div id="loader">
+        
+    </div>
+    <section id="signIn-form-container">
+        <!-- <div id="close-signIn"><i class="fas fa-xmark"></i></div> -->
+        <div class="signIn">
+            <h2>Sign in / Sign up</h2>
+            <a href="home.html" class="logoImage"><img
+                    src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2022_08_04/images/KFC_logo.svg"
+                    alt=""></a>
+            <h1>LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR <br> PHONE NUMBER!</h1>
+            <form action="">
+                <label for="Phone Number"></label>
+                <input type="number" placeholder="Phone Number*                                                                                                                " id="number" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"type = "number" maxlength = "10"/>
+                <p id="TermsAndPolicy">By “logging in to KFC”, you agree to our <a href="">Privacy Policy</a> and <a href="">Terms &
+                        Conditions.</a></p>
+                <input type="submit" value="Send Me the Code" id="Getthecode">
+                <p class="or">or</p>
+                <a href="./home.html"><input type="submit" value="Skip,Continue As Guest" id="Skip"></a>
+            </form>
+        </div>
+    </section>
+    <section>
+        <!-- for the image which is below the location asking  -->
+        <div class="header-2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
+                alt="">
+            <h2 class="desc">SELECT YOUR ORDER TYPE TO START</h2>
+            <div class="order-type">
+                <button id="delivery">Delivery</button>
+                <button id="pickup">Pick up</button>
+                <button id="dine-in">Dine In</button>
+            </div>
+        </div>
+        <!-- Image slider starts-->
+        <div class="img-slider">
+            <a href="../menu/menu.html"><img src="" alt="" id="img-slider"></a>
+        </div>
+        <!-- //image slider ends -->
+        <!-- image below slider starts -->
+        <div id="img-below-slider">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
+                alt="">
+            <!-- Welcome to kukudoo ku -->
+            <h1 class="header-1"> WELCOME TO Kukudoo ku.Com!</h1>
+        </div>
+        <div class="category">
+            <!-- Browse Categories -->
+            <h1 class="header-2">BROWSE CATEGORIES</h1>
+            <div class="img-categories">
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT115.jpg?ver=23.07"
+                        alt="img1" class="category-images">
+                    <p>Hot Deals</p>
+                </a>
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT116.jpg?ver=23.07"
+                        alt="img2" class="category-images">
+                    <p>Chicken Buckets</p>
+                </a>
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT201.jpg?ver=23.07"
+                        alt="img2" class="category-images">
+                    <p>Hot Launches</p>
+                </a>
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT84.jpg?ver=23.07"
+                        alt="img2" class="category-images">
+                    <p>Box meals</p>
+                </a>
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=23.07"
+                        alt="img2" class="category-images">
+                    <p>Burgers</p>
+                </a>
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT189.jpg?ver=23.07"
+                        alt="img2" class="category-images">
+                    <p>Biryani buckets</p>
+                </a>
+                <a href="">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT175.jpg?ver=23.07"
+                        alt="img2" class="category-images">
+                    <p>Snack</p>
+                </a>
+                <a href="">
+                    <img src="https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg" alt="img2"
+                        class="category-images">
+                    <p id="menu-link">View all menu --></p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="otp">
+            <div class="checkOTP">
+                <h1>Enter the otp which you have got on the number</h1>
+                <form action="">
+                    <input type="number"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" placeholder='__' id='number1'/>
+                    <input type="submit" id="checkTheotp" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
+                alt="footer-img">
+            <!-- Offerse & Deals -->
+            <div id="footer-header">
+                <h1>Offers & Deals</h1>
+                <p>View All Deals <span> ---></span></p>
+            </div>
+        </div>
+        <div class="footer-2">
+            <!-- learn to footer and then apply -->
+            <div class="footer-img">
+                <div class="footerImage">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/CHKZINGER.jpg"
+                        alt="" class="img-footer">
+                    <div class="contentFooter">
+                        <h1>1 Pc free chicken..</h1>
+                        <p>1 Pc free Chicken Zinger on a cart value of 499 or above on first order. Only for registered
+                            users.</p>
+                        <a href="">view Details</a>
+                        <button>Redeem</button>
+                    </div>
+                </div>
+                <div class="footerImage">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/VEGZINGER.jpg"
+                        alt="" class="img-footer">
+                    <div class="contentFooter">
+                        <h1>1 Pc free Veg..</h1>
+                        <p>1 Pc free Veg Zinger on a cart value of 499 or above on first order. Only for registered
+                            users.</p>
+                        <a href="">view Details</a>
+                        <button>Redeem</button>
+                    </div>
+                </div>
+                <div class="footerImage">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg"
+                        alt="" class="img-footer">
+                    <div class="contentFooter">
+                        <h1>Add 2 Pc Hot n..</h1>
+                        <p>Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more. Applicable on
+                            2nd & 3rd order for signed in user..</p>
+                        <a href="">view Details</a>
+                        <button>Redeem</button>
+                    </div>
+                </div>
+                <div class="footerImage">
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/BIGSAVE.jpg"
+                        alt="" class="img-footer">
+                    <div class="contentFooter">
+                        <h1>Upto Rs 100 o..</h1>
+                        <p>Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onwards for
+                            signed in user..</p>
+                        <a href="">view Details</a>
+                        <button>Redeem</button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-category"></div>
+            <div id="footer-location"></div>
+            <div id="footer-logo">
+                <img src="" alt="" id="google-play">
+                <img src="" alt="" id="apple-store">
+            </div>
+        </div>
+        <div class="footer-3">
+            <div class="logoImage">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
+                    alt="">
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>kfc food</th>
+                        <th>support</th>
+                        <th>legal</th>
+                        <th>KFC india</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">Menu</a></td>
+                        <td><a href="">get help</a></td>
+                        <td><a href="">Terms and conditions</a></td>
+                        <td><a href="">About kfc</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">order Lookup</a></td>
+                        <td><a href="">Contact us</a></td>
+                        <td><a href="">Privacy policy</a></td>
+                        <td><a href="">KFC Care</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Gift card</a></td>
+                        <td><a href="">KFC feedback</a></td>
+                        <td><a href="">Disclamer</a></td>
+                        <td><a href="">Careers</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Nutrition & Allergies</a></td>
+                        <td><a href="">Privacy Policy </a></td>
+                        <td><a href="">Caution Notice</a></td>
+                        <td><a href="">Our Golden Past</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="findKfc">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg"
+                    alt="">
+                <a href="">Find a Kfc</a>
+            </div>
+            <div class="getKfc">
+                <a href="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+                        alt="">
+                </a>
+                <a href="">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+                        alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-4">
+            <p>Copyright © Kukudoo ku Corporation 2022 All Rights Reserved</p>
+            <div class="socailMedia-links">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg"
+                    alt="">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg"
+                    alt="">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg"
+                    alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./home.js"></script>
+
+</html>

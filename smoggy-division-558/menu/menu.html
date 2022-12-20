@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu.html</title>
+    <link rel="stylesheet" href="../homePage/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-child-1">
+                <span class="logo">
+                    <img src="../image/Kukudoo ku.jpg" alt="" id="logo">
+                </span>
+                <div class="content">
+                    <a href="../menu/menu.html"><h3 class="menu">menu</h3></a>
+                    <a href="../DealSection/deal.html"><h3 class="deal">Deals </h3></a>
+                </div>
+            </div>
+            <div class="navbar-child-2">
+                <!-- image for users -->
+                <div class="sign_in id"  id="signIn">
+                    <i class="fas fa-user"></i>
+                    <span  id="signIn">Sign in</span>
+                </div>
+                <div class="cart-nav">
+                    <span id="price">₹0</span>
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/7FHdvAK9N6x9Ed6H6tsvzo/b14cb9909f2cff2d96c747d479a7ffa5/Cart_icon_animation_120-_icon.svg"
+                        alt="" class="prod-cart">
+                    <span id="Prod-cart">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <i class="fas fa-location"></i>
+            <span class="location-detail">Pick up at: KFC Mumbai - Viviana
+            </span>
+            <i class="fas fa-clock"></i>
+            <span class="location-detail">ASAP</span>
+            <button class="change-location">Change</button>
+        </div>
+    </header>
+    <div id="loader">
+        
+    </div>
+    <section id="signIn-form-container">
+        <!-- <div id="close-signIn"><i class="fas fa-xmark"></i></div> -->
+        <div class="signIn">
+            <h2>Sign in / Sign up</h2>
+            <a href="home.html" class="logoImage"><img
+                    src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2022_08_04/images/KFC_logo.svg"
+                    alt=""></a>
+            <h1>LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR <br> PHONE NUMBER!</h1>
+            <form action="">
+                <label for="Phone Number"></label>
+                <input type="number" placeholder="Phone Number*                                                                                                                " id="number" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"type = "number" maxlength = "10"/>
+                <p id="TermsAndPolicy">By “logging in to KFC”, you agree to our <a href="">Privacy Policy</a> and <a href="">Terms &
+                        Conditions.</a></p>
+                <input type="submit" value="Send Me the Code" id="Getthecode">
+                <p class="or">or</p>
+                <a href="./home.html"><input type="submit" value="Skip,Continue As Guest" id="Skip"></a>
+            </form>
+        </div>
+    </section>
+    <div class="topImage">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
+        alt="">
+    </div>
+    <section>
+        <div class="kfcmenu">
+            <p><a href="#HotDeals">Hot Deals</a></p>
+            <p><a href="#chickenBukets">CHICKEN BUCKETS</a></p>
+            <p><a href="#BoxMeals">Box Meals</a></p>
+            <p><a href="#Burgers">Burgers</a></p>
+            <p><a href="#BiryaniBuckets">#Biryani Buckets</a></p>
+            <p><a href="#Snack">Snack</a></p>
+            <p><a href="#B-D">Beverage and Deserts</a></p>
+        </div>
+        <div class="pro-container">
+            <hr>
+            <div id="HotDeals"></div>
+            <div id="chickenBukets"></div>
+            <div id="BoxMeals"></div>
+            <div id="Burgers"></div>
+            <div id="BiryaniBuckets"></div>
+            <div id="Snack"></div>
+            <div id="B-D"></div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="../homePage/home.js"></script>
+<script src="./menu.js"></script>
